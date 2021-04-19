@@ -1,257 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    
     <head>
-        <style type="text/css">
-            p{color: rgba(0,0,0, 0.8);font-size:110%}
-        </style>
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Viswa Narayanan S.</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <meta charset="utf-8"/>
+        <title>[ Viswa Narayanan Sankaranarayanan ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
     </head>
-
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Viswa Narayanan S.</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-4" src="assets/img/viswa.jpg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>   
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#activities">Other Activities</a></li> -->
-                    
-                </ul>
-            </div>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!-- 
+                    <span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span> -->
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <li><a target="_blank" href="Viswa_CV.pdf">CV (PDF)</a></li>
+                            </ul>
+                        </li><!-- 
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications/">All</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-experience-content').show();" href="#experience">Experience</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
         </nav>
-
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-
-
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-3">
-                        Viswa Narayanan S.
-                        <!-- <span class="text-primary">Taylor</span> -->
-                    </h1>
-
-                    <h4 class="mb-3">Graduate Research Student,</h4>
-                    <h4 class="mb-3">Robotics Research Center, International Institute of Information Technology, Hyderabad.</h4>
-
-                    <p><a href="viswans2132@gmail.com">Email:- viswans2132@gmail.com</a></p>
-                    <h4 class="mb-5"></h4>
-
-                    <p class="lead mb-5">I am a graduate research with expertise in adaptive controllers for aerial robots to tackle modelling uncertainties. I am looking forward to doctoral research in state constrained adaptive control and control-aware trajectory generation.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/viswa-ns/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/viswans2132"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/dr.zilch"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/not_this_is_me/"><i class="fab fa-instagram"></i></a>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-3">
+                    <a target="_blank" href="images/viswa_profile_photo_sq.jpg">
+                        <img id="mobile-img" src="images/viswa_profile_photo_sq.jpg" width="200" border="0" height="200" alt=""></a>
+                </div>
+                <div align="left" class="col-md-7">
+                    <h2>Viswa Narayanan Sankaranarayanan
+                    
+                    <h4>Graduate research student<br>
+                        <a href="https://robotics.iiit.ac.in/">Robotics Research Center</a><br>
+                        <a href="https://iiit.ac.in/">International Institute of Information Technology, Hyderabad</a><br>
+                        Email:
+                        <script language="JavaScript">
+                            <!--
+                            document.write("&nbsp;");
+                            spiderjam('viswa.narayanan','research.iiit.ac.in');
+                            -->
+                            </script><br/>
+                    <h4><i>Expertise: Adaptive control, aerial robotics, Euler-Lagrangian dynamics </i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
+                    
+                </div>
+                
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+                        	I am a graduate research student from <a target="_blank" href="https://robotics.iiit.ac.in/">Robotics Research Center</a> at  <a target="_blank" href="https://www.iiit.ac.in/">International Institute of Information Technology, Hyderabad</a>  with research experience in adaptive controllers for Euler-Lagarangian systems. My research is towards complete autonomy of payload carrying aerial robots. On this pursuit, I have proposed and implemented adaptive controllers for drones to tackle uncertainties in modelling the dynamics and external disturbances. I am looking for opportunities for doctoral research in the fields of state constrained adaptive controller and control-aware trajectory planning.
+                        <a href="Viswa_CV.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <div class="twitterlow" style="display:none;" id="t1">
+            <!-- News Section -->
+            <section  name="news"  id="news">
+                <div class="container lead">
+                    <div style="text-align: left; margin-top:10px" class="col-md-12">
+                        
+                        <b class="noshow" style="display:none;" id="tab-2">
+                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        </b>
+                        <b class="allshow" style="display:none;" id="tab-news-content">
+                            
+                            <hr class="star-primary">
+                            
+                            <h2>News</h2>
+                            <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                                by @dmslcy</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                            </script>
+                            </center>
+                        </b>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-
-
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-4">Education</h2>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-1">MS by Research (ECE)</h3>
-                            <div class="subheading mb-1">Robotics Research Center </div>
-                            <div> <p>International Institute of Information Technology, Hyderabad </p> </div>
-                            <p>CGPA: 9.6 / 10</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2019 - Present</span></div>
-                    </div>
-
-	               <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-	                    <div class="flex-grow-1">
-                            <h3 class="mb-0">Bachelor of Technology </h3>
-                            <div class="subheading mb-1">Electronics and Instrumentation Engineering</div>
-                            <!-- <div>Department of Mechanical Engineering</div> -->
-                            <div> <p>SRM Institute of Science and Technology</p> </div>
-                            <p>CGPA: 8.6 / 10</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2011 - May 2015</span></div>
-                    </div>
-                </div>	
-
-            </section>
-            <hr class="m-0" />
-
-
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-4">Work Experience</h2>
-
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Developer</h3>
-                            <div class="subheading mb-1">KPIT Technologies, Bangalore</div>
-                            <p>Developed and integrated inter-ECU communication and diagnostic modules for automotive projects such as ADAS using AUTOSAR standards. </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2015 - May 2018</span></div>
-                    </div>
-
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Research Assistant</h3>
-                            <div class="subheading mb-1">International Institute of Information Technology, Hyderabad</div>
-                            <p>Conducted research in control and path planning of aerial robots.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2019 - Present</span></div>
-                    </div>
-
-            <!-- Publications-->
-            <section class="resume-section" id="publications">
-                <div class="resume-section-content">
-                    <h2 class="mb-4">Publications</h2>
-                    <div class="subheading mb-1">Conference Papers</div>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p>Sankaranarayanan, V. N., Roy, S., & Baldi, S. (2020). "Aerial transportation of unknown payloads: Adaptive path tracking for quadrotors", IROS, 2020.
-                             <a href="https://ieeexplore.ieee.org/document/9341402">See: Publication</a>
-                             </p>
-                            <div> </div>
-                            <p><a href="https://iiitaphyd-my.sharepoint.com/:v:/g/personal/viswa_narayanan_research_iiit_ac_in/EcfoOU7ecUFBnc39QwSRbc4BEHHqxHpbmJG4pplOiK8n6Q?e=m1MFgp">See: Gazebo Simulation Video</a></p>
-                        </li>
-
-                    </ul>
-
-                    <div class="subheading mb-1">Journal Papers</div>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p>Sankaranarayanan, V. N., & Roy, S. (2020). "Introducing switched adaptive control for quadrotors for vertical operations". Optim Control Appl Meth., 2020.
-                             <a href=" https://doi.org/10.1002/oca.2595">See: Publication</a>
-                             </p>
-                        </li>
-
-                    </ul>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p>Roy, S., Baldi, S., Li, P., & Narayanan, V. (2020). "Artificial-delay adaptive control for under-actuated euler-lagrange robotics". IEEE/ASME Transactions on Mechatronics, 2020.
-                             <a href=" https://doi.org/10.1002/oca.2595">See: Publication</a>
-                             </p>
-                        </li>
-
-                    </ul>
-
-                <div class="subheading mb-1">Under Review</div>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p>Ganguly, S., Sankaranarayanan, V. N., Suraj, B. V. S. G., Yadav, R., & Roy, S. (Eds.). (2021). "Efficient manoeuvring of quadrotor under constrained space and predefined accuracy", IROS, 2021.
-                             </p>
-                        </li>
-
-                    </ul>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p>Suraj, B. V. S. G., Sankaranarayanan, V. N., Yadav, R., Roy, S., & Krishna, K. M. (Eds.). (2021). "Elasticopter: Feasibility study on mechanism and control of a novel reconfigurable quadcopter", IROS, 2021.
-                             </p>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-4">Research Projects</h2>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-2">Mapping and path planning for payload carrying quadrotor</div>
-                            <p>An octomap is generated by using depth camera placed on a payload carrying drone in Gazebo simulation. An RRT* based path planning is applied on the generated map to avoid obstacles.</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-2">Adaptive controller for aerial robots</div>
-                            <p>Implementation and testing of non-linear controllers on payload carrying quadrotors modelled using Euler-Langrage dynamics in Gazebo simulation and actual quadrotors.</p>
-                             <a href="https://github.com/viswans2132/drone_controller">See: Github Repo</a>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-            <hr class="m-0" />
-
-
-
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-4">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages</div>
-
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p> C, C++, Python, MATLAB </p>
-                        </li>
-                    </ul>
-                    <hr class="mb-3" />
-
-                    <div class="subheading mb-3">Tools</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p> ROS, Gazebo, Qt/QML </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        
+        <!-- Research Section -->
+        <section  name="experience" id="experience">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-experience-content').toggle();">Work Experience  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-experience-content-content">
+                        <hr class="star-primary">
+                        <h2>Work Experience</h2>
+                        <ul>
+                        	<li> <b>Software Engineer at KPIT Technologies:</b> Developed and integrated inter-ECU communication and diagnostic modules for automotive projects such as ADAS using AUTOSAR standards (2015-2018).
+                        	</li>
+                        	<li> <b>Researach Intern at IIIT Hyderabad:</b> Conducting research in control and planning of aerial robots. (2019-Present).
+                        	</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <h2>Publications</h2>
+                        <ul>
+                            <li><span class="label label-success">IROS 2020</span> <a target="_blank" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9341402">"Aerial Transportation of Unknown Payloads: Adaptive Path Tracking for Quadrotors"</a>,V. N. Sankaranarayanan, S. Roy and S. Baldi, <b>2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</b>,  Las Vegas, NV, USA, 2020, pp. 7710-7715, doi: 10.1109/IROS45743.2020.9341402.<font color="red"></font></li>
+                            </li>
+                          <li><span class="label label-success">OCAM 2020</span> <a target="_blank" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/oca.2595#:~:text=This%20paper%20proposes%20a%20switched,dynamics%20when%20it%20is%20unknown.">"Introducing switched adaptive control for quadrotors for vertical operations"</a>, Viswa N. Sankaranarayanan and Spandan Roy, <b>Optimal Control Applications and Methods</b>, 2020; 41: 1875– 1888. doi: 10.1002/oca.2595. </li>
+                          <li><span class="label label-success">TMECH 2020</span> <a target="_blank" href="https://ieeexplore.ieee.org/document/9325954">"Artificial-Delay Adaptive Control for Under-actuated Euler-Lagrange Robotics"</a>, Spandan Roy, Simone Baldi, Peng Li and Viswa Narayan, <b>IEEE/ASME Transactions on Mechatronics</b>, doi: 10.1109/TMECH.2021.3052068. <font color="red"></font></li>
+                          <li><span class="label label-warning">IROS 2021</span> “Efficient Manoeuvring of Quadrotor under Constrained Space and Predefined Accuracy”, S. Ganguly, V. N. Sankaranarayanan, B. V. S. G. Suraj, R. Yadav and S. Roy, <b>submitted for review to IROS, 2021. <font color="red"></font></li>
+                      	  <li><span class="label label-warning">IROS 2021</span> “Elasticopter: Feasibility Study on Mechanism and Control of a Novel Reconfigurable Quadcopter”, B. V. S. G. Suraj, V. N. Sankaranarayanan, R. Yadav, S. Roy and K. M. Krishna, <b>submitted for review to IROS, 2021. <font color="red"></font></li>
+                        <!-- <p><a href="publications/" class="btn btn-primary">All Publications &raquo;</a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+ 
+         <!-- Courses Section -->
+         <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Awards and Honors </h2>
+                         <ul>
+                             <li> <b>IIIT Hyderabad research fellowship</b>, Awarded a fellowship to cover tuition and living expenses during my Masters.
+                             </li>
+                             <li> <b>RoboGames'15</b>, Won Bronze Medal in FreeStyle for our humanoid.
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+        <!-- Projects Section -->
+        <section  name="projects" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-projects-content').toggle();">Projects  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-projects-content">
+                        <hr class="star-primary">
+                        <h2>Projects</h2>
+                        <ul>
+                            <li><b>Dynamic aerial payload delivery: </b> An aerial robot carrying a package follows a mobile ground robot autonomously and delivers the package on the ground robot while it is running. </li>
+                            <li><b>Elasticopter: </b>A novel shape-changing quadrotor mechanism and its controller are designed for carrying payloads of different sizes and masses efficiently.</li>
+                            <li><b>Obstacle avoidance for aerial robot: </b>An environment is mapped using OctoMap with the help of visual-inertial sensors and obstacles are avoided by generating an RRT* based trajectory, which is further smoothened by fitting a minimum snap trajectory over it.</li>
+                            <li><b>Biped Locomotion: </b>A 3-feet Biped is designed and its kinematics is modelled to create a trajectory for its locomotion.</li>
+                            <li><b>Writing Robot: </b>A 3-DoF arm is designed to write the letters spoken to it through speech input.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section  name="courses" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                        <hr class="star-primary">
+                        <h2>Courses</h2>
+                        <ul>
+                            <li>Statistical Methods in AI </li>
+                            <li>Mobile Robotics</a></li>
+                            <li>Intro to Robotics</li>
+                            <li>Advances in Robotics and Control</li>
+                            <li>Topics in Applied Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>      
+
+        <!-- TAship Section -->
+        <section  name="taship" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-taship-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-taship-content">
+                        <hr class="star-primary">
+                        <h2>Teaching Assistant Experience</h2>
+                        <ul>
+                            <li><b>Robotics: Dynamics and Control </b> during Spring 2020 at IIIT Hyderabad.</li>
+                            <li><b>Advances in Robotics and Control </b> during Monsoon 2021 at IIIT Hyderabad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>        
     </body>
+    
 </html>
