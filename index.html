@@ -6,10 +6,25 @@
         <title>[ Viswa Narayanan Sankaranarayanan ]</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
+        <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
         
+        <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+           <script src="js/html5shiv.js"></script>
+           <script src="js/respond.min.js"></script>
+           <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
         <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/menucollapse.js"></script>
         <script type="text/javascript" src="js/arrow78.js"></script>
@@ -18,8 +33,10 @@
     
     <body id="page-top" class="index">
         
+        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -31,8 +48,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button></div>
+                    </button><!-- 
+                    <span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span> -->
+                </div>
                 
+                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -42,7 +62,16 @@
                                 <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
                                 <li><a target="_blank" href="Viswa_CV.pdf">CV (PDF)</a></li>
                             </ul>
-                        </li><li class="page-scroll">
+                        </li><!-- 
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications/">All</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#tab-experience-content').show();" href="#experience">Experience</a>
                         </li>
                         <li class="page-scroll">
@@ -63,16 +92,22 @@
                             </a>
                         </li>
                     </ul>
-                </div><div class="collapse" id="bs-example-navbar-collapse-2">
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
                     <gcse:search></gcse:search>
                         </div>
                 
-            </div></nav>
+            </div><!-- /.container-fluid -->
+        </nav>
         
         <section>
+            <!-- Place this tag where you want the search results to render -->
             <gcse:searchresults-only></gcse:searchresults-only>
                 </section>
         
+        <!-- Home Section -->
         <section name="home" id="home" style="margin-top:40px">
             <div class="container">
                 <div align="left" class="col-md-3">
@@ -87,6 +122,10 @@
                         <a href="https://www.ltu.se/">Luleå University of Technology, Sweden</a><br>
                         Email:
                         <script language="JavaScript">
+                            <!--
+                            document.write("&nbsp;");
+                            spiderjam('vissan','ltu.se'); // Updated Email
+                            -->
                             </script><br/>
                     <h4><i>Expertise: Formal Guarantees, Constrained Control, Multi-Robot Coordination </i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
                     <a target="_blank" href="https://github.com/viswans2132/"><img border="0" width="50" src="images/github_blue.webp"/></a>
@@ -95,6 +134,7 @@
                     
                 </div>
                 
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
                 <b class="expandshow" style="display:none;" id="tab-1">
                     <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
                 </b>
@@ -105,9 +145,12 @@
             </div>
         </section>
         
+        <!-- Introduction Section -->
         <section name="intro" id="intro">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
                     <b class="noshow" style="display:none;" id="tab-1">
                         <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
@@ -120,7 +163,7 @@
                             <br><br>
                             My vision is to enable <b>multi-robot coordinated physical interactions through safe learning</b>, unifying advanced control theory (CBFs, MPC) with high-performance deployment on cyber-physical systems. I have substantial experience translating robust control solutions from Gazebo simulations to <b>extensive field evaluations in challenging operational settings</b> using ROS/ROS2 and PX4 firmware.
                             <br><br>
-                            My current research interests include: <b>Formal Guarantees (CBF safety for RL deployment)</b>, <b>Nonlinear and Constrained Control</b>, <b>Dynamic Coordination of mobile manipulators</b>, and <b>Hierarchical Shared Control for Teleoperation</b>.
+                            My current research interests include: <b>Formal Guarantees (CBF safety for RL policy deployment)</b>, <b>Nonlinear and Constrained Control</b>, <b>Dynamic Coordination of mobile manipulators</b>, and <b>Hierarchical Shared Control for Teleoperation</b>.
                         <a href="Viswa_CV.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
                     </div>
                     
@@ -129,6 +172,7 @@
         </section>
         </div>
         
+        <!-- Work Experience Section -->
         <section name="experience" id="experience">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
@@ -155,6 +199,7 @@
         </section>
         
         
+        <!-- Publications Section -->
         <section name="publications" id="publications">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
@@ -168,21 +213,28 @@
                         
                         <h3>Journal Articles (Prioritized)</h3>
                         <ul>
-                             <li><span class="label label-success">CEP 2025</span> <a target="_blank" href="https://doi.org/10.1016/j.conengprac.2025.106363"><b>“Safe docking of a payload-carrying spacecraft using state constrained adaptive control.”</b></a>, Sankaranarayanan, V. N., Banerjee, A., Satpute, S., & Nikolakopoulos, G. *Control Engineering Practice*, 162, 106363. DOI: 10.1016/j.conengprac.2025.106363</li>
-                             <li><span class="label label-success">CEP 2025</span> <a target="_blank" href="https://doi.org/10.1016/j.conengprac.2025.106274"><b>“Switched control barrier functions-based safe docking control strategy for a planar floating platform.”</b></a>, Saradagi, A., Sankaranarayanan, V. N., Banerjee, A., Satpute, S., & Nikolakopoulos, G. *Control Engineering Practice*, 158, 106274. DOI: 10.1016/j.conengprac.2025.106274</li>
-                             <li><span class="label label-success">CEP 2023</span> <a target="_blank" href="https://doi.org/10.1016/j.conengprac.2023.105515"><b>“Adaptive control for a payload carrying spacecraft with state constraints.”</b></a>, Sankaranarayanan, V. N., Banerjee, A., Satpute, S., Roy, S., & Nikolakopoulos, G. *Control Engineering Practice*, 135, 105515. DOI: 10.1016/j.conengprac.2023.105515</li>
+                             <!-- CEP Articles (Priority) -->
+                             <li><span class="label label-success">CEP 2025</span> <a target="_blank" href="https://doi.org/10.1016/j.conengprac.2025.106363"><b>“Safe docking of a payload-carrying spacecraft using state constrained adaptive control.”</b></a>, Sankaranarayanan, V. N., Banerjee, A., Satpute, S., & Nikolakopoulos, G. <i>Control Engineering Practice</i>, 162, 106363. DOI: 10.1016/j.conengprac.2025.106363</li>
+                             <li><span class="label label-success">CEP 2025</span> <a target="_blank" href="https://doi.org/10.1016/j.conengprac.2025.106274"><b>“Switched control barrier functions-based safe docking control strategy for a planar floating platform.”</b></a>, Saradagi, A., Sankaranarayanan, V. N., Banerjee, A., Satpute, S., & Nikolakopoulos, G. <i>Control Engineering Practice</i>, 158, 106274. DOI: 10.1016/j.conengprac.2025.106274</li>
+                             <li><span class="label label-success">CEP 2023</span> <a target="_blank" href="https://doi.org/10.1016/j.conengprac.2023.105515"><b>“Adaptive control for a payload carrying spacecraft with state constraints.”</b></a>, Sankaranarayanan, V. N., Banerjee, A., Satpute, S., Roy, S., & Nikolakopoulos, G. <i>Control Engineering Practice</i>, 135, 105515. DOI: 10.1016/j.conengprac.2023.105515</li>
+                             <!-- TMECH Article (Priority) -->
                              <li><span class="label label-success">TMECH 2020</span> <a target="_blank" href="https://doi.org/10.1109/TMECH.2021.3052068"><b>“Artificial-delay adaptive control for under-actuated euler-lagrange robotics.”</b></a>, Roy, S., Baldi, S., Li, P., & Sankaranarayanan, V. N. *IEEE/ASME Transactions on Mechatronics*. DOI: 10.1109/TMECH.2021.3052068</li>
-                             <li><span class="label label-success">RAL 2022</span> <a target="_blank" href="https://doi.org/10.1109/RAL.2022.3150531"><b>“Robustifying payload carrying operations for quadrotors under time-varying state constraints and uncertainty.”</b></a>, Sankaranarayanan, V. N., Yadav, R. D., Swayampakula, R. K., Ganguly, S., & Roy, S. *IEEE Robotics and Automation Letters*, 7(2), 4885-4892. DOI: 10.1109/RAL.2022.3150531</li>
+                             <!-- RAL Article (Priority) -->
+                             <li><span class="label label-success">RAL 2022</span> <a target="_blank" href="https://doi.org/10.1109/RAL.2022.3150531"><b>“Robustifying payload carrying operations for quadrotors under time-varying state constraints and uncertainty.”</b></a>, Sankaranarayanan, V. N., Yadav, R. D., Swayampakula, R. K., Ganguly, S., & Roy, S. <i>IEEE Robotics and Automation Letters</i>, 7(2), 4885-4892. DOI: 10.1109/RAL.2022.3150531</li>
+                             <!-- Other Journal Articles -->
                              <li><span class="label label-success">Drones 2022</span> <a target="_blank" href="https://doi.org/10.3390/drones6090220"><b>“Adaptive robust control for quadrotors with unknown time-varying delays and uncertainties in dynamics.”</b></a>, Sankaranarayanan, V. N., Satpute, S., & Nikolakopoulos, G. *Drones*, 6(9), 220. DOI: 10.3390/drones6090220</li>
                              <li><span class="label label-success">OCAM 2020</span> <a target="_blank" href="https://doi.org/10.1002/oca.2595"><b>“Introducing switched adaptive control for quadrotors for vertical operations.”</b></a>, Sankaranarayanan, V. N., & Roy, S. *Optimal Control Applications and Methods*, 2020; 41: 1875– 1888. DOI: 10.1002/oca.2595</li>
                         </ul>
 
                         <h3>Conference Proceedings (Prioritized)</h3>
                         <ul>
+                            <!-- ICRA Articles (Priority) -->
                             <li><span class="label label-warning">ICRA 2024</span> <a target="_blank" href="https://doi.org/10.1109/ICRA57147.2024.10611530"><b>“A CBF-adaptive control architecture for visual navigation for UAV in the presence of uncertainties.”</b></a>, Sankaranarayanan, V. N., Saradagi, A., Satpute, S., & Nikolakopoulos, G. *2024 IEEE International Conference on Robotics and Automation*. DOI: 10.1109/ICRA57147.2024.10611530</li>
+                            <!-- IROS Articles (Priority) -->
                             <li><span class="label label-warning">IROS 2024</span> <a target="_blank" href="https://doi.org/10.1109/IROS55545.2024.10642232"><b>“Time-varying control barrier function for safe and precise landing of a UAV on a moving target.”</b></a>, Sankaranarayanan, V. N., Saradagi, A., Satpute, S., & Nikolakopoulos, G. *2024 IEEE/RSJ International Conference on Intelligent Robots and Systems*. DOI: 10.1109/IROS55545.2024.10642232</li>
                             <li><span class="label label-warning">IROS 2021</span> <a target="_blank" href="https://doi.org/10.1109/IROS51108.2021.9636545"><b>“Efficient manoeuvring of quadrotor under constrained space and predefined accuracy.”</b></a>, Ganguly, S., Sankaranarayanan, V. N., Suraj, B., Yadav, R. D., & Roy, S. *2021 IEEE/RSJ International Conference on Intelligent Robots and Systems*. DOI: 10.1109/IROS51108.2021.9636545</li>
                             <li><span class="label label-warning">IROS 2020</span> <a target="_blank" href="https://doi.org/10.1109/IROS45743.2020.9341402"><b>“Aerial transportation of unknown payloads: Adaptive path tracking for quadrotors.”</b></a>, Sankaranarayanan, V. N., Roy, S., & Baldi, S. *2020 IEEE/RSJ International Conference on Intelligent Robots and Systems*. DOI: 10.1109/IROS45743.2020.9341402</li>
+                            <!-- Other Conferences -->
                             <li><span class="label label-warning">ACC 2024</span> <a target="_blank" href="https://doi.org/10.23919/ACC57715.2024.10611530"><b>“Collision-free landing of multiple UAVs on moving ground vehicles using time-varying control barrier functions.”</b></a>, Sankaranarayanan, V. N., Saradagi, A., Satpute, S., & Nikolakopoulos, G. *2024 American Control Conference*. DOI: 10.23919/ACC57715.2024.10611530</li>
                             <li><span class="label label-warning">ICUAS 2024</span> <a target="_blank" href="https://doi.org/10.1109/ICUAS57827.2024.10574577"><b>“Assisted physical interaction: Autonomous aerial robots with neural network detection, navigation, and safety layers.”</b></a>, Berra, A., Sankaranarayanan, V. N., Seisa, A. S., et al. *2024 International Conference on Unmanned Aircraft Systems*. DOI: 10.1109/ICUAS57827.2024.10574577</li>
                             <li><span class="label label-warning">ROBOSOFT 2024</span> <a target="_blank" href="https://doi.org/10.1109/RoboSoft54593.2024.10582531"><b>“Design of a flexible robot arm for safe aerial physical interaction.”</b></a>, Mellet, J., Berra, A., Seisa, A. S., Sankaranarayanan, V. N., et al. *2024 IEEE 7th International Conference on Soft Robotics*. DOI: 10.1109/RoboSoft54593.2024.10582531</li>
@@ -195,6 +247,7 @@
         </section>
         
         
+        <!-- Awards Section -->
         <section name="awards" id="awards">
              <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
@@ -224,6 +277,7 @@
         </section>
         
         
+        <!-- Projects Section -->
         <section name="projects" id="projects">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
@@ -236,6 +290,7 @@
                         
                         <h2>Video Demo: Aerial Robotics & Safe Control</h2>
                         <div style="margin-bottom: 20px;">
+                            <!-- YouTube Embed for J73hrxkzSx4 -->
                             <iframe width="100%" height="450" 
                                 src="https://www.youtube.com/embed/J73hrxkzSx4" 
                                 frameborder="0" 
@@ -251,10 +306,13 @@
                         <ul>
                             <li><b><a target="_blank" href="https://www.aerotrain-etn.eu/">AERO-TRAIN</a> (Marie Curie ITN):</b> Designed and deployed safe, adaptive, and delay-tolerant controllers for aerial payload transportation, manipulation, and deliberate contact applications. Performed vision-based safe landing of UAV on moving targets.
                             </li>
-                            <li><b><a target="_blank" href="https://www.persephone-mining.eu/partners">PERSEPHONE</a>:</b> Implemented **CBF-based reactive controllers** for **safe multi-robot navigation** and collaborative exploration in highly **constrained underground mining environments**.
+                            <!-- UPDATED PERSEPHONE ENTRY with link -->
+                            <li><b><a target="_blank" href="https://www.persephone-mining.eu/partners">PERSEPHONE</a>:</b> Implemented CBF-based reactive controllers for safe multi-robot navigation and collaborative exploration in highly constrained underground mining environments.
                             </li>
-                            <li><b><a target="_blank" href="https://ambitious-project.eu/">AMBITIOUS</a>:</b> Developed a safe, scalable, and **delay-tolerant control architecture** for coordinating **heterogeneous networked multi-agents** to perform IoT sensor data collection missions.
+                            <!-- UPDATED AMBITIOUS ENTRY with link -->
+                            <li><b><a target="_blank" href="https://ambitious-project.eu/">AMBITIOUS</a>:</b> Developed a safe, scalable, and delay-tolerant control architecture for coordinating heterogeneous networked multi-agents to perform IoT sensor data collection missions.
                             </li>
+                            <!-- UPDATED SPEAR ENTRY with link -->
                             <li><b><a target="_blank" href="https://www.spear-robotics.com/">SPEAR</a>:</b> Experimentally validated RL-based control algorithms on UAVs and developed a safety-focused architecture for deploying and testing these policies. Enhanced long-range aerial navigation and remote inspection using onboard sensors and safety-critical control.
                             </li>
                             <li><b>Dynamic aerial payload delivery:</b> An aerial robot carrying a package follows a mobile ground robot autonomously and delivers the package on the ground robot while it is running.
@@ -271,6 +329,7 @@
             </div>
         </section>
 
+        <!-- Teaching Experience Section -->
         <section name="taship" id="taship">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
